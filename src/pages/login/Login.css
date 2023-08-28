@@ -1,0 +1,95 @@
+.login__container {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f4f6f8; 
+  }
+  
+  /* Base container */
+  .login {
+    display: flex;
+    width: 60%;
+    justify-content: space-between;
+    align-items: stretch;  
+    height: 60%;
+    font-family: Arial, sans-serif;
+    gap: 2px; 
+    perspective: 1200px; 
+  }
+  
+  /* Shared styles for side card and form */
+  .login__side-card, .login__form {
+    flex-basis: 50%;
+    border-radius: 2px; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    transform: rotateY(0.5deg); 
+    backface-visibility: hidden;
+  }
+  
+  /* Side card styling */
+  .login__side-card {
+    background: linear-gradient(45deg, #6C5B7B, #C06C84, #F67280);
+    color: #ecf0f1;
+    padding: 20px;
+    transform-origin: right center; 
+  }
+  
+  /* Login form styling */
+  .login__form {
+    padding: 20px;
+    background-color: #ecf0f1;
+    box-shadow: inset 0px 0px 25px rgba(0, 0, 0, 0.1);
+    transform-origin: left center; /* The origin of the rotation for 3D effect */
+  }
+  
+  .login__logo {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  .login__logo-icon {
+    font-size: 48px; /* Adjust size as necessary */
+    margin-right: 10px;
+  }
+  /* Login form styling */
+  
+  .login__input:focus, .login__button:focus {
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+  }
+  
+  .login__input {
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #bdc3c7;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+  .login__button {
+    background: linear-gradient(45deg, #6C5B7B, #C06C84);
+    padding: 12px 20px;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s, transform 0.3s;
+  }
+  
+  .login__button:hover {
+    background: linear-gradient(45deg, #C06C84, #F67280);
+    transform: scale(1.05);
+  }
+  
+  .login__error {
+    color: #e74c3c;
+    margin-top: 10px;
+    font-weight: bold;
+  }
+  
